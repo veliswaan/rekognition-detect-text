@@ -1,0 +1,15 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: 'AWS::Serverless-2016-10-31'
+Description: An AWS Serverless Specification template describing your function.
+Resources:
+  myMotivationalQuotes:
+    Type: 'AWS::Serverless::Function'
+    Properties:
+      FunctionName: myMotivationalQuotes
+      Description: ''
+      Handler: lambda_function.lambda_handler
+      MemorySize: 128
+      Role: >-
+        arn:aws:iam::084642048058:role/service-role/myMotivationalQuotes-role-8vxd2cgp
+      Runtime: python3.8
+      Timeout: 3
