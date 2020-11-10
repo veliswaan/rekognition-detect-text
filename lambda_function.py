@@ -47,7 +47,7 @@ def detect_text(photo, bucket):
 ##publish text as message to SNS if not empty            
     if len(a) != 0:
        print ('length of a - we are here')
-       sns.publish(TopicArn='arn:aws:sns:eu-west-1:084642048058:myMotivations', 
+       sns.publish(TopicArn='arn:aws:sns:eu-west-1:123456789012:myMotivations', 
               Subject= "Motivation for Today " + d2, 
               Message=msg)
     
